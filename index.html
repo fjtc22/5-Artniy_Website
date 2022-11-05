@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Artniy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#CADDC7" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#CADDC7" media="(prefers-color-scheme: dark)">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="CSS/normalize.css" rel="stylesheet" type="text/css">
+    <link href="Prova.sass" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="JS/modernizr.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+
+  <body>
+
+    <script>
+      const convertStyle = () => {
+        const height = window.innerHeight;
+        Array.from(document.getElementsByTagName("main")).forEach((element) => {
+         element.style.height = `${height}px`;
+        });
+      };
+
+      window.addEventListener("resize", convertStyle);
+      window.addEventListener("DOMContentLoaded", convertStyle);
+    </script>
+
+    <!-- Top Navbar -->
+    <nav>
+      <div class="warp-menu">
+        <a href="index.html"><img src="IMG/logo.svg" alt="logo-Artniy"></a>
+      </div>
+
+      <div class="warp-menu" id="listmenu">
+        <ul class="menu" id="boxmenu">
+          <a href="#who" onclick="removemenu()"><li>Chi siamo</li></a>
+          <a href="#value" onclick="removemenu()"><li>I nostri Valori</li></a>
+          <a href="#why" onclick="removemenu()"><li>Perche</li></a>
+          <a href="#news" onclick="removemenu()"><li>Unisciti</li></a>
+        </ul>
+      </div>
+
+      <div class="warp-menu">
+        <p id="contatore"></p>
+      </div>
+
+      <div class="navbar" onclick="openmenu(this)" id="icon">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+    </nav>
+
+    <!--- Hero Section --->
+    <main>
+      <div class="hero-warper">
+        <div class="hero-element">
+          <h1>Benvenuto nel mondo Artniy, dove riscopriamo le nostre <span>origini</span>.</h1>
+          <p>Riteniamo che ogni storia debba essere raccontata, perchè quello che siamo oggi è il risultato di tutte le storie che abbiamo vissuto.</p>
+        </div>
+
+        <div class="hero-element">
+            <h6>Scopri di piu</h6>
+            <img src="IMG/down-arrow.svg" alt="freccia giu">
+        </div>
+      </div>
+    </main>
+
+    <!--- Who Section --->
+
+    <section class="who" id="who">
+      <img src="IMG/logo-black.svg" alt="Logo Artniy">
+      <p>Artniy nasce per dare nuova voce a storie millenarie che altrimenti andrebbero perse. Quale miglior modo di poter raccontare una storia se non con un oggetto che ne rappresenti la sua essenza.</p>
+      <p>Artniy, con le sue opere, ci vuole raccontare delle storie come quelle che ascoltavamo da piccoli.</p>
+      <p>L'obiettivo di Artniy è raccontare storie di culture realmente esistite ma poco conosciute, per far sì che queste non vadano dimenticate.</p>
+    </section>
+
+    <!--- How Section --->
+
+    <section class="how">
+      <h2>Come Funziona</h2>
+
+      <div class="how-warper">
+        <div class="how-element">
+          <img src="IMG/icon-study.svg" alt="">
+          <h3>STUDIO</h3>
+          <hr>
+          <p>Si inizia dallo studio della cultura, delle sue tradizioni e dei suoi racconti, con lo scopo di ricavare gli elementi essenziali che la rendono unica.</p>
+        </div>
+
+        <div class="how-element">
+          <img src="IMG/icon-ideation.svg" alt="">
+          <h3>IDEAZIONE</h3>
+          <hr>
+          <p>Si passa poi alla progettazione in chiave moderna di un prodotto che rappresenti tale cultura, che contenga l’essenza della sua natura. </p>
+        </div>
+
+        <div class="how-element">
+          <img src="IMG/icon-production.svg" alt="">
+          <h3>PRODUZIONE</h3>
+          <hr>
+          <p>Infine ogni progetto sarà realizzato dalle mani esperte di un artigiano che trasformerà l'idea in un oggetto finito.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--- Value Section --->
+
+    <section class="value" id="value" onclick="resetcard()">
+      <h2>I Nostri Valori</h2>
+
+      <div class="value-warper">
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h2>Rispetto dell'ambiente</h2>
+              </div>
+
+              <div class="flip-card-back">
+                <p>I nostri prodotti sono realizzati esclusivamente con materiali locali, nel totale rispetto dell'ambiente.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="flip-card" onclick="">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h2>Rispetto della tradizione</h2>
+            </div>
+
+            <div class="flip-card-back">
+              <p>La manodopera sarà esclusivamente locale, e verrano mantenute il più posbbile le teniche di produzione locali.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h2>Rispetto della cultura</h2>
+            </div>
+
+            <div class="flip-card-back">
+              <p>Nello studio, progettazione e produzione di ogni elemento, verranno rispettate il più possibili le culture, sia per la propria storia che dal punto di vista del modo di pensare.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Where Section -->
+
+    <section class="where">
+      <h2>Il nostro Mondo</h2>
+      <div class="where-warper">
+        <div class="where-element">
+          <img src="IMG/world-map.svg" alt="Immagine del mondo">
+        </div>
+
+        <div class="where-element">
+          <p>La prima cultura a cui si dedicherà Artniy sarà quella Peruviana, ma il desiderio è quello di espandersi per tutto il mondo, con l’obiettivo primario di supportare tutti quei territori, che non riescono ad interagire con il resto del Mondo a causa di diversi limiti di mercato. Artniy si mette in gioco per dare la possibilità a questi Paesi di trasmettere la cultura e le storie che altrimenti andrebbero dimenticate.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Section -->
+
+    <section class="why" id="why">
+      <div class="why-warper">
+        <div class="why-element">
+          <div class="why-banner"></div>
+        </div>
+
+        <div class="why-element">
+          <h2>Perchè lo facciamo</h2>
+          <p>Ci troviamo in un periodo storico molto particolare. Lo scenario post-pandemico e la crisi del turismo hanno portato impedimenti e difficoltà alle famiglie di artigiani.</p>
+          <p>Artniy desidera fornire una struttura che permetta a queste piccole realtà la possibilità di affacciarsi al mercato globale, fornendogli tutti gli strumenti necessari per poter creare dei prodotti che narrino la propria cultura, e che ne preservino la storia.</p>
+          <p>In ogni fase: dalla progettazione alla produzione, fino ad arrivare alla vendita si manterrà al primo posto l'essenza della cultura a cui fa riferimento il prodotto con lo scopo di creare un racconto genuino ed affidabile.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slogan Section -->
+
+    <section class="slogan">
+      <p>“La storia è testimonianza del passato, luce di verità, vita della memoria, maestra di vita, annunciatrice dei tempi antichi.”<br>- Cicerone</p>
+    </section>
+
+    <!-- Newsletter Section -->
+
+    <section class="newsletter" id="news">
+      <div class="news-warper">
+        <h2>Unisciti a noi</h2>
+        <p>Se la nostra visione ti è piacciuta, e desideri essere uno tra i primi a poter scoprire le storie raccontate da Artniy, iscriviti alla nostra newsletter.</p>
+        <p>Promettiamo di non intasarti con mail inutili ma di aggiornarti con l'avanzamento del nostro progetto.</p>
+        <form action="">
+          <input type="email" name="email" placeholder="Inserisci la tua Email" required>
+          <input type="submit" name="submit" value="Iscrivimi">
+          <input id="checkterms" type="checkbox" name="Terms-condition" required>
+          <label for="checkterms">Confermo di aver preso visione della Privacy Policy e fornisco la mia autorizzazione alla ricezione di comunicazioni commerciali ai sensi degli artt. 13-14 del Regolamento Europeo 2016/679 (GDPR).</label>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer>
+      <h2>I Nostri Social</h2>
+
+      <div class="socials">
+        <a href=""><i class="fab fa-facebook-square fa-3x"></i></a>
+        <a href=""><i class="fab fa-instagram-square fa-3x"></i></a>
+        <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
+        <a href=""><i class="fab fa-youtube-square fa-3x"></i></a>
+        <a href=""><i class="fab fa-medium-m fa-3x"></i></a>
+      </div>
+
+      <p>Artniy © 2021 - All rights reserved.</p>
+
+      <p><a href="terms.html">Termini e Condizioni</a> - <a href="">Coockie Prviacy</a></p>
+
+      <button onclick="topFunction()" id="topBTN" title="Go to top">
+        <img src="IMG/up-arrow.svg" alt="icon-arrow">
+      </button>
+
+    </footer>
+  </body>
+
+  <!-- Script Countdown -->
+
+  <script type="text/javascript">
+    var countDownDate = new Date("May 2, 2022 00:00:01").getTime();
+
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      if (seconds <= 9) {
+        document.getElementById("contatore").innerHTML = days + ":" + hours + ":" + minutes + ":" + "0" + seconds;
+      }
+      else {
+        document.getElementById("contatore").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+      }
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("contatore").innerHTML = "Comming Soon";
+      }
+    }, 1000);
+  </script>
+
+  <!-- Script Mobile Menu -->
+
+  <script type="text/javascript">
+    function openmenu(x){
+      var menu = document.getElementById("listmenu");
+      var list = document.getElementById("boxmenu");
+      x.classList.toggle("change");
+
+      if (menu.style.width == "100vw") {
+        menu.style.transform = "translate(100vw)";
+      } else {
+        menu.style.transform = "translate(0vw)";
+      }
+    }
+
+    function removemenu(){
+      var menu = document.getElementById("listmenu");
+      var icon = document.getElementById("icon");
+      var list = document.getElementById("boxmenu");
+      menu.style.transform = "translate(100vw)";
+      icon.classList.remove("change");
+    }
+  </script>
+
+  <!-- Script Reset Cards -->
+
+  <script type="text/javascript">
+    function resetcard(){
+      var cards = document.getElementsByClassName("flip-card-inner");
+      cards.style.transform = "rotateY(0deg)";
+    }
+  </script>
+
+  <!-- Script Go to Top -->
+
+  <script type="text/javascript">
+    function topFunction(){
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</html>
